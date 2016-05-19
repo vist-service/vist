@@ -6,9 +6,9 @@ const md = window.markdownit({
   typographer: true,
   highlight(val, lang) {
     try {
-      return hljs.highlight(lang, val).code
+      return hljs.highlight(lang, val).value
     } catch (e) {
-      return hljs.highlightAuto(val).code
+      return hljs.highlightAuto(val).value
     }
   }
 })
