@@ -1,4 +1,4 @@
-# Vist
+# Vist [![Build Status](https://img.shields.io/circleci/project/vist-service/vist/master.svg)](https://circleci.com/gh/vist-service/vist)
 
 Open-source web client for GitHub Gist, made with Vue.
 
