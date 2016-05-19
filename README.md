@@ -9,6 +9,9 @@ Open-source web client for GitHub Gist, made with Vue.
 First, you need to run Vist API locally for logining with GitHub.
 
 ```bash
+# you need `rolling` installed first
+$ npm install -g rolling
+
 $ git clone https://github.com/vist-service/api.git vist-api
 $ cd vist-api
 $ npm install
@@ -26,7 +29,7 @@ API server is only needed when you wanna login with GitHub.
 ### Client (This repo)
 
 ```bash
-# you need vbuild installed first
+# you need `vbuild` installed first
 $ npm install -g vbuild
 
 $ git clone https://github.com/vist-service/vist.git
