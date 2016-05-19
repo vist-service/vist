@@ -46,7 +46,7 @@
     </div>
     <div
       class="gist-pagination-disabled"
-      v-if="shouldShowBoundary(pagination.first, pagination.prev)">
+      v-if="shouldShowBoundary(pagination.first, pagination.prev) && currentPage - pagination.first.page > 2">
       ...
     </div>
     <div
@@ -69,7 +69,7 @@
     </div>
     <div
       class="gist-pagination-disabled"
-      v-if="shouldShowBoundary(pagination.last, pagination.next)">
+      v-if="shouldShowBoundary(pagination.last, pagination.next) && pagination.last.page - currentPage > 2">
       ...
     </div>
     <div
