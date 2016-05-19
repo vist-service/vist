@@ -47,7 +47,7 @@
     <div
       class="gist-pagination-disabled"
       v-if="shouldShowBoundary(pagination.first, pagination.prev) && currentPage - pagination.first.page > 2">
-      ...
+      <i class="fa fa-ellipsis-h"></i>
     </div>
     <div
       @click="fetchUserGists(pagination.prev.page)"
@@ -70,7 +70,7 @@
     <div
       class="gist-pagination-disabled"
       v-if="shouldShowBoundary(pagination.last, pagination.next) && pagination.last.page - currentPage > 2">
-      ...
+      <i class="fa fa-ellipsis-h"></i>
     </div>
     <div
       @click="fetchUserGists(pagination.last.page)"
@@ -97,7 +97,7 @@
     },
     methods: {
       shouldShowBoundary(a, b) {
-        return a.page !== b.page
+        return a && b && a.page !== b.page
       }
     }
   }

@@ -73,7 +73,7 @@
     methods: {
       getFileIcon(files) {
         return Object.keys(files).length > 1
-          ? 'fa fa-files-o'
+          ? 'fa fa-folder-o'
           : 'fa fa-file-o'
       }
     },
