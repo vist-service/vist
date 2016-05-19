@@ -1,0 +1,9 @@
+machine:
+  node:
+    version: 5
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - npm run publish:surge

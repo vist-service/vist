@@ -4,7 +4,7 @@
   "description": "vist",
   "main": "index.js",
   "scripts": {
-    "test": "echo lol",
+    "test": "npm run build:strict",
     "dev": "vbuild -d",
     "build": "vbuild",
     "build:strict": "vbuild --lint",
@@ -33,5 +33,8 @@
     "vue-router": "^0.7.13",
     "vue-timeago": "^2.0.0",
     "vuex": "^0.6.3"
+  },
+  "devDependencies": {
+    "surge": "^0.18.0"
   }
 }
