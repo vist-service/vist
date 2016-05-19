@@ -39,13 +39,7 @@ $ npm run dev
 
 ### Publish
 
-Register surge.sh and give me your account email.
-
-Once you are granted the permission to access our surge team, use following command to publish:
-
-```bash
-$ npm run publish:surge
-```
+We use CircleCI and Surge.sh to publish website.
 
 ## License
 
