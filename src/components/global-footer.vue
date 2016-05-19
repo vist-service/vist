@@ -28,7 +28,7 @@
   <footer class="footer">
     <div class="container">
       <a class="pr-github" href="https://github.com/vist-service/vist" target="_blank">
-        <i class="fa fa-git"></i> Helpe us improve the web interface.
+        <i class="fa fa-git"></i> Help us improve the web interface.
       </a>
     </div>
   </footer>
