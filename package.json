@@ -1,0 +1,36 @@
+{
+  "name": "vist",
+  "version": "1.0.0",
+  "description": "vist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo lol",
+    "dev": "vbuild -d",
+    "build": "vbuild",
+    "publish:surge": "npm run build && surge -p dist -d vist.surge.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egoist/vist.git"
+  },
+  "keywords": [
+    "vue",
+    "gist"
+  ],
+  "author": "EGOIST <0x142857@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/egoist/vist/issues"
+  },
+  "homepage": "https://github.com/egoist/vist#readme",
+  "dependencies": {
+    "axios": "^0.11.0",
+    "filesize": "^3.3.0",
+    "github-markdown-css": "^2.3.0",
+    "markdown-it-task-lists": "^1.2.0",
+    "parse-link-header": "^0.4.1",
+    "vue-router": "^0.7.13",
+    "vue-timeago": "^2.0.0",
+    "vuex": "^0.6.3"
+  }
+}

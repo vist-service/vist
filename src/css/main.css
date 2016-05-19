@@ -1,0 +1,74 @@
+:root {
+  --sidebarWidth: 280px;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  background-color: #eee;
+  padding-bottom: 50px;
+  font-family: -apple-system, BlinkMacSystemFont,
+               'avenir next', avenir,
+               helvetica, 'helvetica neue',
+               Ubuntu,
+               'segoe ui', arial,
+               sans-serif;
+}
+
+.container {
+  max-width: 1080px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.wrap {
+  margin-top: 20px;
+  display: flex;
+}
+
+.sidebar {
+  width: var(--sidebarWidth);
+  & .sidebar-heading {
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 5px;
+    & i {
+      margin-right: 5px;
+    }
+    & h2 {
+      font-size: .9rem;
+    }
+  }
+}
+
+.inner {
+  padding: 20px;
+}
+
+.inner-half {
+  padding: 10px;
+}
+
+.main {
+  flex: 1;
+  padding-left: 20px;
+  max-width: calc(100% - var(--sidebarWidth));
+}
+
+.single-box {
+  flex: 1;
+}
+
+.box {
+  border: 1px solid #cfd8dc;
+  background-color: white;
+  border-radius: 2px;
+}

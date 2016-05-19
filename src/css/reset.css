@@ -1,0 +1,16 @@
+body, h1, h2, h3, h4, h5, ul, pre {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+pre {
+  overflow: auto;
+}
