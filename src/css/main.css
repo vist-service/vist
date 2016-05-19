@@ -33,6 +33,7 @@ body {
 .wrap {
   margin-top: 20px;
   display: flex;
+  min-height: 80vmin;
 }
 
 .sidebar {

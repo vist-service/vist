@@ -20,7 +20,9 @@
   <div class="view-gist">
     <div class="container">
       <div class="wrap" v-if="loading">
-        <i class="fa fa-spinner fa-pulse fa-fw"></i>
+        <div class="single-box" style="padding: 20px 0;">
+          <i class="fa fa-spinner fa-pulse fa-fw"></i>
+        </div>
       </div>
       <div class="wrap" v-else>
         <div class="sidebar">
