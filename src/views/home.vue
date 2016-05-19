@@ -7,6 +7,9 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    & sup {
+      font-size: 12px;
+    }
     & i {
       margin-right: 5px;
     }
@@ -32,8 +35,12 @@
           </div>
           <div class="gist-list" v-if="gists.length > 0">
             <a v-link="{path: '/gist/' + gist.id}" class="gist-item" v-for="gist in gists">
-              <i :class="getFileIcon(gist.files)"></i>
+              <i class="fa fa-file-o" v-if="gist.public"></i>
+              <i class="octicon octicon-gist-secret" v-else></i>
               {{ gist.files | firstFileName }}
+              <sup v-if="getFilesCount(gist.files) > 1">
+                {{ getFilesCount(gist.files) }}
+              </sup>
             </a>
           </div>
           <gist-pagination></gist-pagination>
@@ -71,10 +78,8 @@
       }
     },
     methods: {
-      getFileIcon(files) {
-        return Object.keys(files).length > 1
-          ? 'fa fa-folder-o'
-          : 'fa fa-file-o'
+      getFilesCount(files) {
+        return Object.keys(files).length
       }
     },
     filters: {

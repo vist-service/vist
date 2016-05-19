@@ -111,9 +111,9 @@
       },
       getFileIcon(file) {
         if (!file.language || file.language === 'Markdown' || file.language === 'Text') {
-          return 'fa fa-file-text-o'
+          return 'octicon octicon-markdown'
         }
-        return 'fa fa-file-code-o'
+        return 'octicon octicon-file-code'
       },
       activate(filename) {
         this.active = filename
