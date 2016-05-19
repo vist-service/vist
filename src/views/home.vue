@@ -65,6 +65,7 @@
       }
     },
     ready() {
+      document.title = 'Vist'
       if (this.gists.length === 0) {
         this.fetchUserGists(1)
       }

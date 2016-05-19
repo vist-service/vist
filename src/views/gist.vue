@@ -117,6 +117,7 @@
       },
       activate(filename) {
         this.active = filename
+        document.title = filename
         if (this.files[filename]) {
           return
         }
