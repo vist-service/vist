@@ -2,6 +2,10 @@ machine:
   node:
     version: 5
 
+test:
+  override:
+    - npm install -g vbuild && npm test
+
 deployment:
   production:
     branch: master
