@@ -17,7 +17,6 @@
 </template>
 
 <script>
-  import {qs} from 'utils'
   import {fetchUserProfile} from 'actions'
 
   export default {

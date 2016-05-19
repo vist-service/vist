@@ -1,6 +1,5 @@
 import {
   FETCH_USER_PROFILE,
-  FETCH_USER_GISTS,
   START_FETCHING_USER_GISTS,
   DONE_FETCHING_USER_GISTS,
   SET_USER_GISTS_PAGINATION,
@@ -12,7 +11,7 @@ const state = {
   gists: [],
   gistsOptions: {
     page: 1,
-    per_page: 10
+    per_page: 10 // eslint-disable-line
   },
   pagination: null,
   loadingGists: false

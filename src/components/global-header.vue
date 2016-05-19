@@ -57,7 +57,7 @@
 </template>
 
 <script>
-  import {loginURL, qsCache} from 'utils'
+  import {loginURL} from 'utils'
 
   export default {
     vuex: {

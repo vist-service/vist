@@ -42,7 +42,7 @@
           </div>
         </div>
         <div class="main">
-          What should I put here? 
+          What should I put here?
         </div>
       </div>
     </div>

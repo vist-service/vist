@@ -1,9 +1,19 @@
 import path from 'path'
 
+const eslint = {
+  globals: [
+    'window',
+    'location',
+    'localStorage',
+    'hljs'
+  ]
+}
+
 export default {
   title: 'Vist',
   port: 3888,
   template: './src/template.hbs',
+  eslint,
   webpack(config, options) {
     setAlias(config)
   }

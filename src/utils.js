@@ -37,7 +37,7 @@ const qsCache = qs()
 const api = axios.create({
   baseURL: `https://api.github.com`,
   params: {
-    access_token: store.state.app.accessToken
+    access_token: store.state.app.accessToken // eslint-disable-line
   }
 })
 

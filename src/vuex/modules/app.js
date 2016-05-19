@@ -1,7 +1,6 @@
 import {
   SET_ACCESS_TOKEN
 } from 'types'
-import {qsCache} from 'utils'
 
 const state = {
   accessToken: localStorage.getItem('vist:token')

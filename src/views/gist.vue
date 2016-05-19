@@ -116,16 +116,15 @@
       getFileIcon(file) {
         if (!file.language || file.language === 'Markdown' || file.language === 'Text') {
           return 'fa fa-file-text-o'
-        } else {
-          return 'fa fa-file-code-o'
         }
+        return 'fa fa-file-code-o'
       },
       async activate(filename) {
         this.active = filename
         if (this.files[filename]) {
           return
         }
-        this.loadingContent = true;
+        this.loadingContent = true
         const res = await api.get(this.gist.files[filename].raw_url, {
           transformResponse: [
             function (data) {
