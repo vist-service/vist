@@ -69,9 +69,6 @@
               {{{ markdown(activeContent) }}}
             </div>
           </div>
-          <div class="box inner" v-else>
-            <i class="fa fa-spinner fa-pulse fa-fw"></i>
-          </div>
         </div>
       </div>
     </div>
@@ -87,7 +84,6 @@
     data() {
       return {
         loading: false,
-        loadingContent: false,
         gist: null,
         active: '',
         files: {}
@@ -119,23 +115,15 @@
         }
         return 'fa fa-file-code-o'
       },
-      async activate(filename) {
+      activate(filename) {
         this.active = filename
         if (this.files[filename]) {
           return
         }
-        this.loadingContent = true
-        const res = await api.get(this.gist.files[filename].raw_url, {
-          transformResponse: [
-            function (data) {
-              return data
-            }
-          ]
-        })
-        this.loadingContent = false
+        const content = this.gist.files[filename].content
         this.files = {
           ...this.files,
-          [filename]: res.data
+          [filename]: content
         }
       },
       highlight(val) {
