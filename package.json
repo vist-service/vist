@@ -8,7 +8,7 @@
     "dev": "vbuild -d",
     "build": "vbuild",
     "build:strict": "vbuild --lint",
-    "publish:surge": "npm run build && surge -p dist -d vist.surge.sh"
+    "publish:surge": "surge -p dist -d vist.surge.sh"
   },
   "repository": {
     "type": "git",
