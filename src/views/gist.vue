@@ -110,8 +110,11 @@
         this.activate(Object.keys(res.data.files)[0])
       },
       getFileIcon(file) {
-        if (!file.language || file.language === 'Markdown' || file.language === 'Text') {
+        if (file.language === 'Markdown') {
           return 'octicon octicon-markdown'
+        }
+        if (!file.language || file.language === 'Text') {
+          return  'fa fa-file-o'
         }
         return 'octicon octicon-file-code'
       },
